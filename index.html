@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compounding Trading Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Compounding Trading Calculator</h1>
+    <p>This simple tool helps you project the growth of a trading account using the power of compounding. Enter your starting capital, average return per period, and the number of periods to see how your account can grow over time.</p>
+  </header>
+
+  <main>
+    <div class="form-group">
+      <label for="initial">Initial Capital ($)</label>
+      <input type="number" id="initial" value="1000" min="0" step="0.01">
+    </div>
+    <div class="form-group">
+      <label for="returnRate">Return per Period (%)</label>
+      <input type="number" id="returnRate" value="1" min="-100" max="100" step="0.01">
+    </div>
+    <div class="form-group">
+      <label for="periods">Number of Periods</label>
+      <input type="number" id="periods" value="30" min="1" step="1">
+    </div>
+    <button id="calculate" class="button">Calculate</button>
+
+    <div id="output"></div>
+  </main>
+
+  <footer>
+    <p>Built with ❤️ by FlowSoMango</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
